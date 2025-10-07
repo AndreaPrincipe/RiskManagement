@@ -21,7 +21,7 @@ and computing the total cost in euros under each scenario.
 ---
 
 ## 🧭 Project Structure
-
+```plaintext
 project_root/
 │
 ├── main.py # Main simulation script
@@ -29,4 +29,21 @@ project_root/
 ├── risk_models.py # Module containing risk measure optimization models
 ├── simulation_log_CVaR.txt # Example log file (auto-generated)
 │
+```
 
+## Requirements
+To correctly run the project, ensure that the following dependencies are installed:
+```plaintext
+gurobipy==11.0.3
+matplotlib==3.5.1
+numpy==1.20.3
+scipy==1.10.1
+```
+The random and time modules are part of Python’s standard library (no need to install).
+The Python version used is 3.12.4. Furthermore, an active license is required for Gurobi.
+
+After installing the dependencies, simply run the main script:
+
+```bash
+python main.py
+```
